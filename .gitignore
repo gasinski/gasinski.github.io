@@ -1,0 +1,6 @@
+# ignore all hidden files, but not .gitignore
+.*
+!/.gitignore
+
+# intellij idea
+*.iml
