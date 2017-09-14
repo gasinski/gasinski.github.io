@@ -233,10 +233,10 @@
 					$(form).ajaxSubmit({
 						type: "POST",
 						data: $(form).serialize(),
-						url: "_layout/php/send.php",
+						url: "layout/php/send.php",
 						success: function(msg) {
 
-							if (msg == 'OK') {
+							if (msg === 'OK') {
 								result = '<div class="alert success"><i class="fa fa-check-circle-o"></i>The message has been sent!</div>';
 								$('#contact-form').clearForm();
 							} else {
